@@ -6,11 +6,11 @@ const bird = new Bird();
 let imgTop;
 let imgBot;
 function preload() {
-  soundTrack = loadSound("/soundz/she.mp3");
-  drop = loadSound("/soundz/waterDrop.m4a");
+  soundTrack = loadSound("soundz/she.mp3");
+  drop = loadSound("soundz/waterDrop.m4a");
   bird.preloadBird();
-  imgTop = loadImage("/imges/blueStroke-top.png");
-  imgBot = loadImage("/imges/blueStroke-bottom.png");
+  imgTop = loadImage("imges/blueStroke-top.png");
+  imgBot = loadImage("imges/blueStroke-bottom.png");
 }
 
 function setup() {

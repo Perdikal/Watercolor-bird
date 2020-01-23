@@ -8,7 +8,7 @@ class Bird {
     this.velocity = 0;
   }
   preloadBird() {
-    this.image = loadImage("/imges/ezgif.com-gif-maker.gif");
+    this.image = loadImage("imges/ezgif.com-gif-maker.gif");
   }
   setup() {
     fill(255);
