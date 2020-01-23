@@ -7,7 +7,7 @@ let imgTop;
 let imgBot;
 function preload() {
   soundTrack = loadSound("soundz/she.mp3");
-  drop = loadSound("soundz/waterDrop.m4a");
+  drop = loadSound("soundz/drop.mp3");
   bird.preloadBird();
   imgTop = loadImage("imges/blueStroke-top.png");
   imgBot = loadImage("imges/blueStroke-bottom.png");
@@ -16,8 +16,10 @@ function preload() {
 function setup() {
   createCanvas(WIDTH, HEIGHT);
   soundTrack.play();
+  pipes.push(new Obstacle());
 }
 function draw() {
+  frameRate(30);
   if (gameOver) {
     gameOverFunc();
   }

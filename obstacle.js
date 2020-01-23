@@ -13,7 +13,6 @@ class Obstacle {
   }
 
   setup() {
-    fill("#FFFF33");
     image(imgTop, this.x, 0, this.width, this.top);
     image(imgBot, this.x, HEIGHT - this.bottom, this.width, this.bottom);
   }
@@ -21,15 +20,18 @@ class Obstacle {
     this.x -= this.speedPullingLeft;
   }
   colides(bird) {
-    if (bird.y > this.top && bird.y + 260 / 4 < HEIGHT - this.bottom) {
-      if (bird.x + 260 / 4 === this.x) {
-        drop.play();
-        currentScore++;
-        document.getElementById(
-          "score"
-        ).innerText = ` Current   Score :  ${currentScore}`;
-      }
+    if (
+      bird.x + 260 / 4 === this.x &&
+      bird.y + 260 / 4 < HEIGHT - this.bottom &&
+      bird.y > this.top
+    ) {
+      drop.play();
+      currentScore++;
+      document.getElementById(
+        "score"
+      ).innerText = ` Current   Score :  ${currentScore}`;
     }
+
     if (
       bird.y + 20 < this.top ||
       bird.y - 40 + 260 / 4 > HEIGHT - this.bottom
