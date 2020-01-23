@@ -1,9 +1,9 @@
 class Bird {
   constructor() {
     this.image;
-    this.x = 500;
-    this.y = HEIGHT / 2;
-    this.gravity = 0.7;
+    this.x = 500 / 4;
+    this.y = HEIGHT / 4;
+    this.gravity = 0.4;
     this.force = -12;
     this.velocity = 0;
   }
@@ -12,7 +12,7 @@ class Bird {
   }
   setup() {
     fill(255);
-    image(this.image, this.x, this.y, 260, 260);
+    image(this.image, this.x, this.y, 260 / 4, 260 / 4);
   }
   fly() {
     this.velocity += this.force;
@@ -20,7 +20,7 @@ class Bird {
   draw() {
     this.velocity += this.gravity;
     this.y += this.velocity;
-    if (this.y + 130 > HEIGHT) {
+    if (this.y + 130 / 4 > HEIGHT) {
       gameOverFunc();
     }
     if (this.y < 0) {
