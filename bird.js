@@ -4,7 +4,7 @@ class Bird {
     this.x = 500 / 4;
     this.y = HEIGHT / 4;
     this.gravity = 0.4;
-    this.force = -12;
+    this.force = -9;
     this.velocity = 0;
   }
   preloadBird() {
