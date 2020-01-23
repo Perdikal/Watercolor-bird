@@ -26,3 +26,7 @@ button {
   font-size: 10em;
   margin: 135px;
 }
+#title {
+  font-size: 15em;
+  word-spacing: 60px;
+}

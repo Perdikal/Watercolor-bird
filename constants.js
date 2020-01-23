@@ -14,4 +14,9 @@ const gameOverFunc = () => {
   textFont("mustache brush");
   textSize(320);
   text("GAME OVER", WIDTH - 2500, HEIGHT / 2);
+  button = createButton("Restart Game");
+  button.position(WIDTH / 2 - 200, HEIGHT / 2 - 200);
+  button.mousePressed(function() {
+    location.reload();
+  });
 };
