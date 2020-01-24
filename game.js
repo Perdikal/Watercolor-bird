@@ -1,6 +1,7 @@
 document.getElementById("startGame").addEventListener("click", () => {
   startGame = true;
   document.getElementById("menu").style.display = "none";
+  document.getElementById("score").style.display = "block";
 });
 const bird = new Bird();
 let imgTop;

@@ -9,7 +9,7 @@ class Obstacle {
     this.x = WIDTH;
     this.width = 50;
     this.speedPullingLeft = 10 / 5;
-    this.minSpace = 250;
+    this.minSpace = 100;
   }
 
   setup() {
