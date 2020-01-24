@@ -1,6 +1,6 @@
 class Obstacle {
   constructor() {
-    this.minDistance = HEIGHT / 3;
+    this.minDistance = HEIGHT / 2;
     this.top = Math.floor(Math.random() * (HEIGHT - this.minDistance));
     this.bottom =
       HEIGHT -
@@ -17,7 +17,7 @@ class Obstacle {
     image(imgBot, this.x, HEIGHT - this.bottom, this.width, this.bottom);
   }
   draw() {
-    this.x -= this.speedPullingLeft;
+    this.x -= speedPullingLeft;
   }
   colides(bird) {
     if (

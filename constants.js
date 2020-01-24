@@ -6,6 +6,7 @@ let startGame = false;
 let gameOver = false;
 let soundTrack;
 let drop;
+let speedPullingLeft = 10 / 5;
 const gameOverFunc = () => {
   gameOver = true;
   startGame = false;

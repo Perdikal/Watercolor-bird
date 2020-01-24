@@ -25,7 +25,8 @@ function draw() {
     gameOverFunc();
   }
   if (startGame) {
-    background("#FFF");
+    /* background("#FFF"); */
+    clear();
     bird.setup();
     bird.draw();
     pipes.forEach(pipe => {
